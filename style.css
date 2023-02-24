@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Side Bar */
+.sideBar {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+}
+.user {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.image i {
+  background-color: rgb(34, 135, 135);
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 10px 10px 10px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro h6 {
+  font-size: 25px;
+}
+.intro p {
+  font-size: 15px;
+}
+.line {
+  width: 200px; /* set a fixed width */
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+  border-bottom: 2px solid black;
+  margin: 0 auto; /* center the div horizontally */
+  text-align: center;
+  padding-top: 30px;
+}
+/* Side Bar TODO List*/
+.mainTasks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.mainTasks h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.mainTasks ul {
+  list-style-type: none;
+}
+.mainTasks ul li .color {
+  background-color: rgb(166, 3, 3);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.mainTasks ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+/* Todo Right Operations  */
+.todo {
+  background-color: rgb(34, 135, 135);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.heading .tagLine {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.addTask {
+  background-color: aqua;
+  width: 90%;
+}
+.allTasks {
+  background-color: rgba(82, 234, 7, 0.726);
+  width: 90%;
+}

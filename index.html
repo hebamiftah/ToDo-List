@@ -4,9 +4,71 @@
     <title>ToDo List</title>
     <!-- Linking StyleSheet -->
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
+    <div class="main">
+      <!-- Left Side bar -->
+      <div class="sideBar">
+        <div class="user">
+          <!-- Image of User -->
+          <div class="image">
+            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+          </div>
+
+          <!-- Introduction of User -->
+          <div class="intro">
+            <h6>Do it</h6>
+            <p>Heba Miftah</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="mainTasks">
+          <h3>Main Tasks to Do</h3>
+          <ul class="mainTasksList">
+            <li>
+              <div class="color"></div>
+              <p>Learn HTML</p>
+            </li>
+            <li>
+              <div class="color"></div>
+              <p>Do Cooking</p>
+            </li>
+            <li>
+              <div class="color"></div>
+              <p>Learn Coding</p>
+            </li>
+            <li>
+              <div class="color"></div>
+              <p>Read Books</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--ToDo List-->
+      <div class="todo">
+        <!--Heading-->
+        <div class="heading">
+          <h2>Make your own Customized</h2>
+          <h2 class="tagLine">TO-DO list</h2>
+        </div>
+
+        <!--Add a Task-->
+        <div class="addTask"></div>
+        <!--Display Tasks-->
+        <div class="allTasks">All</div>
+      </div>
+    </div>
+
     <!-- Linking JavaScript -->
     <script src="script.js"></script>
   </body>
