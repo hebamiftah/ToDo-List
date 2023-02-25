@@ -63,9 +63,96 @@
         </div>
 
         <!--Add a Task-->
-        <div class="addTask"></div>
+        <div class="addTask">
+          <!-- Input Tasks -->
+          <div class="inputTasks">
+            <input type="text" placeholder="Add Your Task" />
+            <div class="priority">
+              <select name="colorPriority" class="colorPriority">
+                <option value="" disabled selected hidden>Priority</option>
+                <!-- Option -->
+                <ul>
+                <option value="none">
+                  <div class="prColorNone"></div>
+                  <p>None</p>
+                </option>
+                <div class="prColorlow">.</div>
+                <option value="low">
+                 
+                  <p>Low</p>
+                </option>
+
+                <option value="medium">
+                  <div class="prColormedium"></div>
+                  <p>Medium</p>
+                </option>
+
+                <option value="high">
+                  <div class="prColorhigh"></div>
+                  <p>High</p>
+                </option>
+              </select>
+            </div>
+            <input type="date" placeholder="Choose date" />
+          </div>
+
+          <!-- Additional Options | Priority, Super Tasks-->
+          <button class="btnAdd">Add Task</button>
+        </div>
         <!--Display Tasks-->
-        <div class="allTasks">All</div>
+        <div class="allTasks">
+          <p class="tagline">Your Tasks</p>
+
+          
+          <!-- Task -->
+          <div class="eachTask">
+            <div class="left">
+              <div class="priorityColor"></div>
+              <p class="text">Task Name</p>
+            </div>
+            <div class="right">
+              <p class = "date">July 25, 2023</p>
+              <div class="icons">
+                <button class = "checkBtn"><i class="fa-regular fa-circle-check"></i></i></button>
+                <button class="unCheckBtn"><i class="fa-regular fa-circle"></i></i></button>
+                <button class="deleteBtn"><i class = "fa fa-trash" aria-hidden="true"></i></button>
+              </div>
+            </div>    
+          </div>
+
+          <div class="eachTask">
+            <div class="left">
+              <div class="priorityColor"></div>
+              <p class="text">Task Name</p>
+            </div>
+            <div class="right">
+              <p class = "date">July 25, 2023</p>
+              <div class="icons">
+                <button class = "checkBtn"><i class="fa-regular fa-circle-check"></i></i></button>
+                <button class="unCheckBtn"><i class="fa-regular fa-circle"></i></i></button>
+                <button class="deleteBtn"><i class = "fa fa-trash" aria-hidden="true"></i></button>
+              </div>
+            </div>    
+          </div>
+
+          <div class="eachTask">
+            <div class="left">
+              <div class="priorityColor"></div>
+              <p class="text">Task Name</p>
+            </div>
+            <div class="right">
+              <p class = "date">July 25, 2023</p>
+              <div class="icons">
+                <button class = "checkBtn"><i class="fa-regular fa-circle-check"></i></i></button>
+                <button class="unCheckBtn"><i class="fa-regular fa-circle"></i></i></button>
+                <button class="deleteBtn"><i class = "fa fa-trash" aria-hidden="true"></i></button>
+              </div>
+            </div>    
+          </div>
+          
+          <button class="clearAll">Clear All</button>
+
+        </div>
       </div>
     </div>
 
