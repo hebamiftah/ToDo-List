@@ -14,7 +14,13 @@
   </head>
 
   <body>
+   
+    
     <div class="main">
+      <!-- Notification -->
+    <div class="notification-container">
+      <div class="notification">Task Added Successfully!</div>
+    </div>
       <!-- Left Side bar -->
       <div class="sideBar">
         <div class="user">
@@ -57,6 +63,7 @@
       <!--ToDo List-->
       <div class="todo">
         <!--Heading-->
+        <div class="topContainer">
         <div class="heading">
           <h2>Make your own Customized</h2>
           <p class="tagLine">TO-DO list</p>
@@ -99,6 +106,7 @@
           <!-- Additional Options | Priority, Super Tasks-->
           <button class="btnAdd">Add Task</button>
         </div>
+      </div>
         <div class="lineSeperator"></div>
         <!--Display Tasks-->
         <div class="allTasks">
@@ -108,14 +116,15 @@
           <!-- Task -->
           <div class="eachTask">
             <div class="left">
+              <!-- Bullet Point -->
               <div class="priorityColor"></div>
               <p class="text">Task Name</p>
             </div>
             <div class="right">
               <p class = "date">July 25, 2023</p>
               <div class="icons">
-                <button class = "checkBtn"><i class="fa-regular fa-circle-check"></i></i></button>
-                <button class="unCheckBtn"><i class="fa-regular fa-circle"></i></i></button>
+                <button class = "checkBtn"><i class="fa-regular fa-circle-check"></i></button>
+                <button class="unCheckBtn"><i class="fa-regular fa-circle"></i></button>
                 <button class="deleteBtn"><i class="fa-solid fa-trash-can"></i></button>
               </div>
             </div>    
