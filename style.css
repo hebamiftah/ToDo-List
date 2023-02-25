@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .main {
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   display: flex;
+  font-size: 18px;
+  background-color: white;
   flex-direction: row;
 }
 
 /* Side Bar */
 .sideBar {
-  background-color: aquamarine;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   flex-basis: 250px;
@@ -22,10 +27,11 @@
   justify-content: flex-start;
   padding-left: 20px;
   gap: 20px;
+
   align-items: center;
 }
 .image i {
-  background-color: rgb(34, 135, 135);
+  background-color: #3fd4f4;
   border: 1px solid black;
   border-radius: 50%;
   padding: 5px 10px 10px 10px;
@@ -36,10 +42,11 @@
   justify-content: center;
 }
 .intro h6 {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
 }
 .intro p {
-  font-size: 15px;
+  font-size: px;
 }
 .line {
   width: 200px; /* set a fixed width */
@@ -80,36 +87,44 @@
 }
 /* Todo Right Operations  */
 .todo {
-  background-color: rgb(34, 135, 135);
+  background-color: #3fd4f4;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
+  margin: 10px 10px;
+  border-radius: 10px;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 40px;
+}
+.heading h2 {
+  font-size: 30px;
+  font-weight: bold;
 }
 .heading .tagLine {
   font-size: 30px;
   padding-bottom: 10px;
 }
 .addTask {
-  background-color: aqua;
   width: 90%;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .allTasks {
-  background-color: rgba(82, 234, 7, 0.726);
-  width: 90%;
+  width: 95%;
 }
 
 /* Styling Input for Tasks */
 .addTask {
   display: flex;
+  width: 95%;
+  border-radius: 10px;
   flex-direction: column;
-  background-color: blueviolet;
+  justify-content: center;
   padding: 40px 20px;
 }
 .inputTasks {
@@ -123,7 +138,7 @@ input:focus {
   outline: none;
 }
 .inputTasks input {
-  width: 100%;
+  width: 1009%;
   height: 40px;
   padding-left: 10px;
   border-radius: 10px;
@@ -142,10 +157,10 @@ input:focus {
   border-radius: 10px;
 }
 .inputTasks input[type='text'] {
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 .inputTasks input[type='date'] {
-  flex-basis: 20%;
+  flex-basis: 25%;
   padding: 0px 10px;
   border-radius: 10px;
 }
@@ -193,22 +208,23 @@ input:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(246, 237, 222);
+  background-color: rgb(255, 255, 255);
   width: 85%;
   margin: auto;
   padding: 10px 50px;
   border-radius: 10px;
-  font-size: 18px;
 }
 .priorityColor {
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: rgb(239, 255, 11);
   border-radius: 50%;
 }
 .eachTask .text {
+  font-size: 18px;
 }
 .eachTask .date {
+  font-size: 18px;
 }
 
 .icons {
@@ -229,6 +245,7 @@ input:focus {
 .unCheckBtn {
 }
 .deleteBtn {
+  color: rgb(246, 50, 50);
 }
 
 .left,
