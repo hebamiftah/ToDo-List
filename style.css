@@ -108,6 +108,7 @@
 }
 .heading .tagLine {
   font-size: 30px;
+
   padding-bottom: 10px;
 }
 .addTask {
@@ -268,12 +269,32 @@ input:focus {
   align-items: center;
   gap: 20px;
 }
+.tasksCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.noTaskT {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 .tagline {
   font-size: 30px;
+  margin-top: 40px;
   text-align: center;
   padding-bottom: 20px;
   font-weight: bold;
+}
+.noTask {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 100%;
+  color: rgb(236, 77, 77);
 }
 
 /* Animations */
@@ -308,17 +329,42 @@ input:focus {
   animation: slide-in-left 1s ease;
 }
 
+/* Right Animation */
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(400px);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(0px);
+  }
+}
+
 /* Notification */
 .notification-container {
   position: fixed;
   top: 0;
   right: 0;
   padding: 20px 10px;
+  display: none;
   z-index: 9999;
 }
 
 .notification {
   background-color: #fff;
+  animation: slide-right 1s ease;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   color: #333;
