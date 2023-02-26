@@ -158,6 +158,10 @@ const addTask = function addTask() {
   // calling the renderTask function
   renderTask()
   showNotification('Task Added', '#00cc00', 'white')
+  // clear the input fields
+  taskInput.value = ''
+  priorityInput.value = ''
+  dateInput.value = ''
 }
 
 /* Function to Clear the list of tasks */
