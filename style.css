@@ -139,7 +139,7 @@ input:focus {
   outline: none;
 }
 .inputTasks input {
-  width: 1009%;
+  width: 100%;
   height: 40px;
   padding-left: 10px;
   border-radius: 10px;
@@ -324,4 +324,74 @@ input:focus {
   color: #333;
   font-size: 16px;
   padding: 10px 15px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 576px) {
+  .main {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .user {
+    justify-content: center;
+    align-items: center;
+  }
+  .mainTasks {
+    display: none;
+  }
+  .sideBar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .inputTasks {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .inputTasks input[type='text'],
+  .inputTasks input[type='date'] {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .btnAdd,
+  .clearAll {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .eachTask {
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .eachTask .text,
+  .eachTask .date {
+    font-size: 16px;
+  }
+  .left {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .icons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+  .clearAll {
+    width: 85%;
+  }
 }
