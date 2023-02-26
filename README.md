@@ -1,4 +1,1 @@
-# ToDo List Project
-
-It is a Todo app built with HTML, CSS, and JavaScript. it includes all the basic features that a User want.
-
+This is a simple To Do List website using HTML, CSS, and JS focused on client side programming, and maximizing user experience with basic, efficient UI practices. This To Do List website allows users to add, and delete an unlimited number of tasks. Users may also sort tasks by color coded level of priority, and add due dates to them. 
