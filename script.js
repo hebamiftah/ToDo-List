@@ -166,7 +166,7 @@ const addTask = function addTask() {
 
 /* Function to Clear the list of tasks */
 const clearTask = function () {
-  // clear the task list
+  // clear the task list array
   taskList = []
   // clear the main container
   completedTaskContainer.innerHTML = ''
